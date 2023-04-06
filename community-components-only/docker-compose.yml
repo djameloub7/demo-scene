@@ -10,7 +10,7 @@
 version: '2'
 services:
   zookeeper:
-    image: confluentinc/cp-zookeeper:5.3.0
+    image: confluentinc/cp-zookeeper:latest
     ports:
       - '31000:31000'
     environment:
@@ -37,7 +37,7 @@ services:
     # See https://rmoff.net/2018/08/02/kafka-listeners-explained/ for details
     # "`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-
     #  
-    image: confluentinc/cp-enterprise-kafka:5.3.0
+    image: confluentinc/cp-enterprise-kafka:latest
     ports:
       - '9092:9092'
       - '31001:31001'
